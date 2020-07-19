@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.progress-bar {
+    animation: expandWidth 1s linear 1.3s forwards;
+}
+@keyframes expandWidth {
+    0% { width: 0; }
+    25% { width: 20%; }
+    50% { width: 40%; }
+    75% { width: 60%; }
+    100% { width: 80%; }
+}
