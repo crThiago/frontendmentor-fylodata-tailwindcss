@@ -5,35 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <link rel="stylesheet" href="css/output.css">
 </head>
-<body 
-  class="bg-verydarkblue bg-no-repeat bg-contain"
-  style="background-image: url(images/bg-desktop.png); background-position-y: 50vh;"
->
-  <div class="container px-3 sm:mx-auto sm:h-screen flex items-center">
+<body class="bg font-body">
+  <div class="container px-3 mx-auto h-screen flex items-center">
     <div class="w-full flex flex-wrap sm:flex-no-wrap justify-between">
-      <div class="bg-darkblue rounded rounded-tr-lg p-8 w-full sm:w-1/3">
+      <div class="bg-darkblue rounded rounded-tr-lg p-8 mx-5 w-full sm:w-1/3">
           <img class="w-32" src="../images/logo.svg" alt="Logo Fylo">
           <div class="flex items-center mt-8">
               <span class="bg-verydarkblue cursor-pointer rounded-sm mx-1 h-10 w-10 flex items-center justify-center">
-                <img class="w-auto" src="images/icon-document.svg" alt="">
+                <img class="w-auto" src="images/icon-document.svg" alt="New File">
               </span>
               <span class="bg-verydarkblue cursor-pointer rounded-sm mx-1 h-10 w-10 flex items-center justify-center">
-                <img class="w-auto" src="images/icon-folder.svg" alt="">
+                <img class="w-auto" src="images/icon-folder.svg" alt="New Folder">
               </span>
               <span class="bg-verydarkblue cursor-pointer rounded-sm mx-1 h-10 w-10 flex items-center justify-center">
-                <img class="w-auto" src="images/icon-upload.svg" alt="">
+                <img class="w-auto" src="images/icon-upload.svg" alt="Upload">
               </span>
           </div>
       </div>
-      <div class="bg-darkblue relative ml-8 mt-10 rounded text-white p-8 w-auto sm:w-2/3">
+      <div class="bg-darkblue relative mx-5 sm:ml-8 mt-10 rounded text-white p-8 w-full sm:w-2/3">
           <p class="text-sm">You’ve used <strong>815 GB</strong> of your storage</p>
           <div class="relative bg-verydarkblue p-1 rounded-lg mb-2 mt-4">
-            <p class="bg-white absolute rounded-t rounded-bl flex items-center py-2 px-4 top-0 right-0 -mt-24">
+            <p class="ballon bg-white absolute rounded flex items-center py-2 px-4">
               <span class="text-4xl text-verydarkblue font-extrabold mr-3">185</span> 
               <span class="text-grayishblue text-xs font-extrabold uppercase">GB Left</span>
             </p>
@@ -46,11 +44,10 @@
               <p>1000 GB</p>
           </div>
       </div>
-    </div>
-    
+    </div> 
   </div>
 
-  <div class="absolute text-white top-0 right-0">
+  <div class="absolute w-screen text-center sm:text-right text-white bottom-0 right-0">
     Challenge by <a class="font-extrabold" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a class="font-extrabold" href="https://github.com/crThiago">Thiago Costa</a>.
   </div>

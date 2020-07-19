@@ -10,15 +10,15 @@ module.exports = {
       extrabold: 800
     },
     borderRadius: {
+      none: '0px',
       default: '10px',
       'sm': '5px',
       'lg': '100px'
     },
     screens: {
       sm: '640px',
-      // md: '768px',
-      // lg: '1024px',
-      xl: '916px',
+      md: '768px',
+      lg: '916px',
     },
     container: {
       center: true

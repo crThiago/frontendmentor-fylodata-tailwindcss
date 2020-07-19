@@ -4,6 +4,11 @@
 
 @tailwind utilities;
 
+.bg {
+    background: url(../images/bg-desktop.png) #0c122c no-repeat 0 50vh;
+    background-size: 150vw;
+}
+
 .progress-bar {
     animation: expandWidth 1s linear 1.3s forwards;
 }
@@ -13,4 +18,41 @@
     50% { width: 40%; }
     75% { width: 60%; }
     100% { width: 80%; }
+}
+
+.ballon {
+    margin-top: -111px;
+    top: 0;
+    right: 0;
+}
+
+.ballon::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 24px solid #fff;
+    border-left: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    right: 0;
+    bottom: -16px;
+}
+
+@media (max-width: 640px) {
+    .bg {
+        background: url(../images/bg-mobile.png) #0c122c no-repeat;
+        background-size: cover;
+    }
+
+    .ballon {
+        left: 50%;
+        top: 12.5rem;
+        width: 154px;
+        transform: translate(-50%, -50%);
+    }
+
+    .ballon::before {
+        display: none; 
+    }
 }
